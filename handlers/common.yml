@@ -1,0 +1,3 @@
+# Common handlers
+- name: sample handler
+  command: date

@@ -1,0 +1,4 @@
+# Common tasks
+#
+- name: common task
+  command: df

@@ -1,0 +1,16 @@
+- hosts:
+    - default
+  vars_files:
+    - vars/common.yml
+  sudo: true
+
+  tasks:
+    - include: tasks/common.yml
+
+    - name: Sample
+      tags:
+        - sample
+      command: ls /
+
+  handlers:
+    - include: handlers/common.yml
