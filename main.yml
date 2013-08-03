@@ -1,0 +1,9 @@
+- hosts:
+    - default
+  vars_files:
+    - vars/common.yml
+  user: root
+  #sudo: true
+
+  tasks:
+    - include: tasks/main.yml
