@@ -1,4 +1,2 @@
-- name: install dependencies needed to install ppa keys
-  action: apt pkg=$item state=installed update_cache=yes
-  with_items:
-    - python-software-properties 
+- name: Install dependencies needed to install ppa keys
+  apt: pkg=python-software-properties state=installed update_cache=yes
